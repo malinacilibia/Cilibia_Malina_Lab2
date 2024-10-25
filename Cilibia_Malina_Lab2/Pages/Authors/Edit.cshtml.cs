@@ -31,7 +31,7 @@ namespace Cilibia_Malina_Lab2.Pages.Author
             }
 
             var authors =  await _context.Author.FirstOrDefaultAsync(m => m.ID == id);
-            if (authors == null)
+            if (authors == null) 
             {
                 return NotFound();
             }

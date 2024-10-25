@@ -7,3 +7,4 @@
         public ICollection<BookCategory>? BookCategories { get; set; }
     }
 }
+ 

@@ -20,7 +20,7 @@ namespace Cilibia_Malina_Lab2.Models
                     CategoryID = cat.ID,
                     Name = cat.CategoryName,
                     Assigned = bookCategories.Contains(cat.ID)
-                });
+                }); 
             }
         }
         public void UpdateBookCategories(Cilibia_Malina_Lab2Context context,

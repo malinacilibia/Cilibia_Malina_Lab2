@@ -23,7 +23,7 @@ namespace Cilibia_Malina_Lab2.Pages.Publishers
         {
             return Page();
         }
-
+         
         [BindProperty]
         public Publisher Publisher { get; set; } = default!;
 

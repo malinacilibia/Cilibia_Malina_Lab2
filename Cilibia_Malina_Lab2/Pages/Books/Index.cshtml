@@ -33,7 +33,7 @@
             </th>
         </tr>    
     </thead>
-    <tbody>
+    <tbody> 
             …
             @foreach (var item in Model.BookD.Books)
             {
@@ -60,7 +60,7 @@
                         @Html.DisplayFor(modelItem => item.Author.LastName)
                 </td>
                 <td>
-                    @{
+                    @{ 
                         foreach (var category in item.BookCategories)
                         {
                             @category.Category.ID @: @category.Category.CategoryName <br />

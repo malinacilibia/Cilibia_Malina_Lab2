@@ -18,7 +18,7 @@ namespace Cilibia_Malina_Lab2.Pages.Books
         {
             _context = context;
         }
-
+         
         public IList<Book> Book { get; set; } = default!;
         public BookData BookD { get; set; }
         public int BookID { get; set; }
@@ -27,7 +27,7 @@ namespace Cilibia_Malina_Lab2.Pages.Books
         {
             BookD = new BookData();
 
-            BookD.Books = await _context.Book
+            BookD.Books = await _context.Book 
             .Include(b => b.Publisher)
             .Include(b => b.Author)
             .Include(b => b.BookCategories)

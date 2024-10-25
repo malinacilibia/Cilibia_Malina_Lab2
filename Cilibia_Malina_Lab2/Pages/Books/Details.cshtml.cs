@@ -18,7 +18,7 @@ namespace Cilibia_Malina_Lab2.Pages.Books
         {
             _context = context;
         }
-
+         
         public Book Book { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
@@ -32,7 +32,7 @@ namespace Cilibia_Malina_Lab2.Pages.Books
                             .Include(b => b.BookCategories)
                             .ThenInclude(bc => bc.Category)
                             .Include(b => b.Author)
-                            .FirstOrDefaultAsync(m => m.ID == id); 
+                            .FirstOrDefaultAsync(m => m.ID == id);  
             if (book == null)
             {
                 return NotFound();

@@ -24,7 +24,7 @@ namespace Cilibia_Malina_Lab2.Pages.Books
         public IActionResult OnGet()
         {
             var authorList = _context.Author.Select(x => new
-            {
+            { 
                 x.ID,
                 FullName = x.FirstName + " " + x.LastName
             });

@@ -45,7 +45,7 @@ namespace Cilibia_Malina_Lab2.Pages.Books
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
-        {
+        { 
             if (id == null)
             {
                 return NotFound();
